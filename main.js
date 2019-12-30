@@ -124,3 +124,19 @@ function divisibleByFive(n) {
     }
     return false;
 }
+
+//17. Create a function that takes an integer and returns true if it's divisible by 100, otherwise return false.
+function divisible(num) {
+    if (num % 100 === 0) {
+        return true;
+    }
+    return false;
+}
+
+//18.depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+function comp(str1, str2) {
+    if (str1.length === str2.length) {
+        return true;
+    }
+    return false;
+}
