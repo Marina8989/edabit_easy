@@ -51,3 +51,30 @@ function remainder(x, y) {
     return x % y;
 }
 //remainder(8, 3);
+
+//9. Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+function lessThanOrEqualToZero(num) {
+    if (num <= 0) {
+        return true;
+    }
+    return false;
+}
+
+//10.In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+// chickens = 2 legs
+// cows = 4 legs
+// pigs = 4 legs
+// The farmer has counted his animals and he gives you a subtotal for each species.You have to implement a function that returns the total number of legs of all the animals.
+
+function animals(chickens, cows, pigs) {
+    return (chickens * 2) + (cows * 4) + (pigs * 4);
+}
+
+//11. Write a function that takes two integers (hours, minutes) and converts them into seconds.
+function convert(hours, minutes) {
+    let h = hours * 60 * 60;
+    let m = minutes * 60;
+    return h + m;
+}
+
+//12.
