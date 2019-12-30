@@ -31,3 +31,9 @@ function getFirstValue(arr) {
     return arr[0];
 }
 //getFirstValue([1,2,3]);
+
+//6. Create a function that finds the maximum range of a triangle's third edge.
+function nextEdge(side1, side2) {
+    return (side1 + side2) - 1;
+}
+//nextEdge(3,6);
