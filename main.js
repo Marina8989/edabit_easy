@@ -77,4 +77,43 @@ function convert(hours, minutes) {
     return h + m;
 }
 
-//12.
+//12.Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+function dividesEvenly(a, b) {
+    if (a % b == 0) {
+        return true;
+    }
+    return false;
+}
+
+//13. In this challenge, you must verify the equality of two different given parameters: a and b.
+
+// Both the value and the type of parameters need to be tested in order to have an matching equality.The possible types of the given parameters are:
+
+// Numbers
+// Strings
+// Booleans(false or true)
+// Special values: undefined, null and NaN
+// What have you learnt so far that will permit you to do two different checks(value and type) with a single statement ?
+
+//     Implement a function that returns true if the parameters are equal, and false if they are different.
+
+
+function checkEquality(a, b) {
+    if (a === b) {
+        return true;
+    }
+    return false;
+}
+
+// 14. Your job is to find out whether the lamp is on or off.
+function lampStatus() {
+    return lamp === 'on';
+}
+
+//15.Create a function that takes in three arguments (prob, prize, pay) and returns true if prob * prize > pay; otherwise return false.
+function profitableGamble(prob, prize, pay) {
+    if (prob * prize > pay) {
+        return true;
+    }
+    return false;
+}
