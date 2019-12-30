@@ -25,3 +25,9 @@ function addition(num) {
     return num = num + z;
 }
 // addition(2);
+
+//5. Create a function that takes an array and returns the first element.
+function getFirstValue(arr) {
+    return arr[0];
+}
+//getFirstValue([1,2,3]);
