@@ -37,3 +37,13 @@ function nextEdge(side1, side2) {
     return (side1 + side2) - 1;
 }
 //nextEdge(3,6);
+
+//7. Write a function that converts hours into seconds.
+function howManySeconds(hours) {
+    let min = 60;
+    let sec = 60;
+    return hours * min * sec;
+}
+//howManySeconds(2);
+
+//8.
