@@ -21,8 +21,8 @@ function triArea(base, height) {
 
 //4.Create a function that takes a number as an argument, increments the number by +1 and returns the result.
 function addition(num) {
-    let z = 1
-    return num = num + z;
+    let z = 1;
+    return (num = num + z);
 }
 // addition(2);
 
@@ -34,7 +34,7 @@ function getFirstValue(arr) {
 
 //6. Create a function that finds the maximum range of a triangle's third edge.
 function nextEdge(side1, side2) {
-    return (side1 + side2) - 1;
+    return side1 + side2 - 1;
 }
 //nextEdge(3,6);
 
@@ -67,7 +67,7 @@ function lessThanOrEqualToZero(num) {
 // The farmer has counted his animals and he gives you a subtotal for each species.You have to implement a function that returns the total number of legs of all the animals.
 
 function animals(chickens, cows, pigs) {
-    return (chickens * 2) + (cows * 4) + (pigs * 4);
+    return chickens * 2 + cows * 4 + pigs * 4;
 }
 
 //11. Write a function that takes two integers (hours, minutes) and converts them into seconds.
@@ -97,7 +97,6 @@ function dividesEvenly(a, b) {
 
 //     Implement a function that returns true if the parameters are equal, and false if they are different.
 
-
 function checkEquality(a, b) {
     if (a === b) {
         return true;
@@ -107,12 +106,20 @@ function checkEquality(a, b) {
 
 // 14. Your job is to find out whether the lamp is on or off.
 function lampStatus() {
-    return lamp === 'on';
+    return lamp === "on";
 }
 
 //15.Create a function that takes in three arguments (prob, prize, pay) and returns true if prob * prize > pay; otherwise return false.
 function profitableGamble(prob, prize, pay) {
     if (prob * prize > pay) {
+        return true;
+    }
+    return false;
+}
+
+//16. Create a function that returns true if an integer is divisible by 5, and false otherwise.
+function divisibleByFive(n) {
+    if (n % 5 === 0) {
         return true;
     }
     return false;
