@@ -171,3 +171,17 @@ function getLastItem(arr) {
 
 //24. Create a function that takes a name and returns a greeting. Don't use a normal function but use an "arrow function".
 const helloName = name => `Hello ${name}!`;
+
+//25. Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.
+function volumeOfBox(sizes) {
+    let x = sizes.width * sizes.length * sizes.height;
+    return x;
+}
+
+//26. Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+function isEvenOrOdd(num) {
+    if (num % 2 === 0) {
+        return "even";
+    }
+    return "odd";
+}
