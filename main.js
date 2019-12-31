@@ -163,3 +163,11 @@ function concatName(firstName, lastName) {
 function reverse(arr) {
     return arr.reverse();
 }
+
+//23. Create a function that accepts an array and returns the last item in the array.
+function getLastItem(arr) {
+    return arr[arr.length - 1];
+}
+
+//24. Create a function that takes a name and returns a greeting. Don't use a normal function but use an "arrow function".
+const helloName = name => `Hello ${name}!`;
