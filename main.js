@@ -140,3 +140,26 @@ function comp(str1, str2) {
     }
     return false;
 }
+
+//19. Write a function that returns the length of a string. Make your function recursive.
+function length(str) {
+    return str.length;
+}
+
+//20. Create a function that returns true if a string is empty and false otherwise.
+function isEmpty(s) {
+    if (s === "") {
+        return true;
+    }
+    return false;
+}
+
+//21. Given two strings, firstName and lastName, return a single string in the format "last, first".
+function concatName(firstName, lastName) {
+    return lastName + ", " + firstName;
+}
+
+//22. Write a function to reverse an array.
+function reverse(arr) {
+    return arr.reverse();
+}
