@@ -190,3 +190,19 @@ function isEvenOrOdd(num) {
 function search(arr, item) {
     return arr.indexOf(item);
 }
+
+//28. Given two numbers, return true if the sum of both numbers is less than 100. Return false otherwise.
+function lessThan100(a, b) {
+    if (a + b < 100) {
+        return true;
+    }
+    return false;
+}
+
+//29. Create a function that returns true if a string contains any spaces.
+function hasSpaces(str) {
+    if (str.includes(" ")) {
+        return true;
+    }
+    return false;
+}
