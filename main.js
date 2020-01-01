@@ -206,3 +206,8 @@ function hasSpaces(str) {
     }
     return false;
 }
+
+//30. Create a function that returns the number of argument it was called with.
+function numArgs() {
+    return arguments.length;
+}
