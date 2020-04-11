@@ -356,3 +356,13 @@ function numberArgs(...args) {
     return args.length;
 }
 numberArgs([1, 2, 3, 4], "a", 6);
+
+//42. Write a function that takes the last number of a consecutive list of numbers and returns the total of all numbers up to and including it.
+function addUpTo(n) {
+    let total = 0;
+    for (i = 0; i <= n; i++) {
+        total += i;
+    }
+    return total;
+}
+addUpTo(6);
