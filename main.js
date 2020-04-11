@@ -375,3 +375,9 @@ function match(s1, s2) {
     return false;
 }
 match("hello", "heLLo");
+
+//44. Create a function that takes a string and returns a string with spaces in between all of the characters.
+function space(str) {
+    return str.split('').join(' ');
+}
+space('marina');
