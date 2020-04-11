@@ -252,3 +252,43 @@ function isLastCharacterN(word) {
 
 const arr = [1, 2, 3, 4, 5, 6];
 const [a, b, c, d, e, f] = arr;
+
+//35.There is something you have to do with the variable name rest in order to assign it an object containing the rest of the object properties. You can find out how in the MDN docs in the Resources tab.
+
+//Use the rest syntax to change the code so that rest = {city: "Phoenix", state: "AZ", address: "USA"}. Only edit the left side of the assignmet { name, email, rest }. Ignore the .toString() function (used for validation).
+const user = {
+    name: "John",
+    email: "john@example.com",
+    city: "Phoenix",
+    state: "AZ",
+    country: "USA",
+};
+const str = `({ name, email, ...rest} = user ).toString()`;
+
+//36.
+// Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
+
+// name
+// population
+// continent
+// The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).
+// cityFacts({
+//   name: "Paris",
+//   population: "2,140,526",
+//   continent: "Europe"
+// }) ➞ "Paris has a population of 2,140,526 and is situated in Europe"
+
+// cityFacts({
+//   name: "Tokyo",
+//   population: "13,929,286",
+//   continent: "Asia"
+// }) ➞ "Tokyo has a population of 13,929,286 and is situated in Asia"
+
+function cityFacts(city) {
+    this.name = city.name;
+    this.population = city.population;
+    this.continent = city.continent;
+
+    return `${this.name} has a population of ${this.population} and is situated in ${this.continent}`;
+}
+cityFacts(cityFacts);
