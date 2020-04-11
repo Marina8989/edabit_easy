@@ -292,3 +292,38 @@ function cityFacts(city) {
     return `${this.name} has a population of ${this.population} and is situated in ${this.continent}`;
 }
 cityFacts(cityFacts);
+
+//37. Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+function isPlural(word) {
+    if (word.indexOf("s") === word.length - 1) {
+        return true;
+    }
+    return false;
+}
+
+//38.Sometimes an object will be missing properties we are expecting. We can avoid undefined errors by using default values. Use ES6 object destructuring to add a default value of 1 to the one variable. Ignore the .toString() function (used for validation).
+const str = `({ one = 1, two } = { two : 2 }).toString()`;
+
+//39. const arr = ["cars", "planes", ["trains", ["motorcycles"]]]
+
+// let trans1 = arr[0]
+// let trans2 = arr[1]
+// let trans3 = arr[2][0]
+// let trans4 = arr[2][1][0]
+
+// console.log(trans1) // outputs "cars"
+// console.log(trans2) // outputs "planes"
+// console.log(trans3) // outputs "trains"
+// console.log(trans4) // outputs "motorcycles"
+const arr = ["cars", "planes", ["trains", ["motorcycles"]]]
+
+// Fix the following using es6 destructuring
+// Only edit what's inside of [ trans1, trans2, trans3, trans4 ]
+let [trans1, trans2, [trans3, [trans4]]] = arr
+
+/*
+console.log(trans1) // should output "cars"
+console.log(trans2) // should output "planes"
+console.log(trans3) // should output "trains"
+console.log(trans4) // should output "motorcycles"
+*/
