@@ -229,7 +229,7 @@ function totalCups(n) {
     return n + Math.floor(n / 6);
 }
 
-//32. Create a function that takes a string as an argument. The string is a random name.
+//33. Create a function that takes a string as an argument. The string is a random name.
 
 // If the last character of the name is an "n", return true.
 // If the last character of the name is not an "n", return false.
@@ -241,3 +241,14 @@ function isLastCharacterN(word) {
         return false;
     }
 }
+
+//34.  ES6: Destructuring Arrays I
+//const arr = [1, 2, 3, 4, 5, 6]
+//let a = arr[0]
+//let b = arr[1]
+
+//console.log(a) // outputs 1
+//console.log(b) // outputs 2
+
+const arr = [1, 2, 3, 4, 5, 6];
+const [a, b, c, d, e, f] = arr;
